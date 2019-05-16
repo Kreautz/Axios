@@ -10,7 +10,7 @@ class Portofolio extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://my-json-server.typicode.com/kreautz/latihan-pwa-api/db`)
+        axios.get(`https://my-json-server.typicode.com/kreautz/latihan-pwa-api/mahasiswa`)
           .then(res => {
             const mahasiswa = res.data;
             this.setState({ mahasiswa });
